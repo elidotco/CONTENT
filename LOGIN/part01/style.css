@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@1;200;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Ysabeau Office", sans-serif;
+}
+
+body {
+  background: url("./GG.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 70px;
+}
+
+.container {
+  color: whitesmoke;
+  width: 400px;
+  height: 500px;
+  border-radius: 27px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(201, 201, 201, 0.8) 0%,
+    rgba(196, 196, 196, 0.1) 100%
+  );
+
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 50px;
+}
+.inpc {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+input {
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  opacity: 0.5;
+  background: linear-gradient(
+    135deg,
+    rgba(201, 201, 201, 0.8) 0%,
+    rgba(196, 196, 196, 0.1) 100%
+  );
+  backdrop-filter: blur(30px);
+  padding: 10px;
+  font-size: 20px;
+}
+.for {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: #a5d9d0;
+  border: none;
+  margin-top: 30px;
+  font-size: 20px;
+}
