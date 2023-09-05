@@ -79,4 +79,10 @@ button {
   border: none;
   margin-top: 30px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
 }
