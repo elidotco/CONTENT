@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: pfs-bold;
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/PFSquareSansPro-Bold.otf");
+}
+body {
+  background: #000;
+}
+.drop {
+  width: 20em;
+  margin: 5em auto;
+  font-family: pfs-bold;
+  color: #86919a;
+  text-transform: uppercase;
+  position: relative;
+  transition: width 0.5s;
+  will-change: width;
+}
+.drop .option {
+  padding: 1em;
+  cursor: pointer;
+  background-color: #485761;
+}
+.drop .option:not(.active) {
+  display: none;
+  opacity: 0;
+  transform: translateY(-50%);
+}
+.drop.visible {
+  animation: bounce 1s;
+  width: 24em;
+}
+.drop.visible:before,
+.drop.visible:after {
+  border-color: #fff;
+}
+.drop.visible:before {
+  opacity: 0;
+}
+.drop.visible:after {
+  opacity: 1;
+}
+.drop.visible .option {
+  color: #fff;
+  display: block;
+}
+.drop.opacity .option {
+  transform: translateZ(0);
+  opacity: 1;
+}
+.drop.opacity .option:nth-child(0) {
+  transition: opacity 0.5s 0s, transform 0.5s 0s;
+}
+.drop.opacity .option:nth-child(1) {
+  transition: opacity 0.5s 0.1s, transform 0.5s 0.1s;
+}
+.drop.opacity .option:nth-child(2) {
+  transition: opacity 0.5s 0.2s, transform 0.5s 0.2s;
+}
+.drop.opacity .option:nth-child(3) {
+  transition: opacity 0.5s 0.3s, transform 0.5s 0.3s;
+}
+.drop.opacity .option:nth-child(4) {
+  transition: opacity 0.5s 0.4s, transform 0.5s 0.4s;
+}
+.drop.opacity .option:nth-child(5) {
+  transition: opacity 0.5s 0.5s, transform 0.5s 0.5s;
+}
+.drop.opacity .option:nth-child(6) {
+  transition: opacity 0.5s 0.6s, transform 0.5s 0.6s;
+}
+.drop.opacity .option:nth-child(7) {
+  transition: opacity 0.5s 0.7s, transform 0.5s 0.7s;
+}
+.drop.opacity .option:nth-child(8) {
+  transition: opacity 0.5s 0.8s, transform 0.5s 0.8s;
+}
+.drop.opacity .option:nth-child(9) {
+  transition: opacity 0.5s 0.9s, transform 0.5s 0.9s;
+}
+.drop.withBG .option {
+  transition: background-color 0.1s;
+}
+.drop.withBG .option:not(.placeholder):hover {
+  background-color: #5aafee;
+}
+.drop.withBG .option:not(.placeholder).active {
+  background-color: #5aafee;
+}
+.drop:after,
+.drop:before {
+  content: "";
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+  width: 0.75em;
+  height: 0.75em;
+  border: 0.2em solid #86919a;
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+  transition: opacity 0.2s;
+}
+.drop:before {
+  border-left: none;
+  border-top: none;
+  top: 1.2em;
+}
+.drop:after {
+  border-right: none;
+  border-bottom: none;
+  opacity: 0;
+}
+.mini-hack {
+  opacity: 0;
+  transform: translateY(-50%);
+}
