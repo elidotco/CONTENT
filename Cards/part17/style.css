@@ -1,0 +1,156 @@
+:root {
+  --primary: rgb(211, 38, 38);
+  --overlay: rgba(211, 38, 38, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+main {
+  width: 600px;
+  height: 300px;
+  font: 0.7rem impact, sans-serif;
+
+  & header {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 2.25rem;
+    color: white;
+
+    & span {
+      color: var(--primary);
+    }
+  }
+
+  & section {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.indexes,
+.tabs {
+  list-style-type: none;
+}
+
+.indexes {
+  font-size: 1rem;
+
+  & li {
+    padding: 1rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+}
+
+.tabs {
+  position: relative;
+}
+
+.tab {
+  position: absolute;
+  display: flex;
+  width: 530px;
+  height: 225px;
+  opacity: 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+.tab-content {
+  position: relative;
+  z-index: 5;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(-5rem);
+
+  & h3 {
+    font-family: helvetica;
+    font-weight: 900;
+    font-size: 1rem;
+    border-bottom: 1.5px solid white;
+    padding-bottom: 1rem;
+  }
+
+  & p {
+    font-family: helvetica;
+    font-weight: 100;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  & button {
+    width: fit-content;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 0.7rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+  }
+}
+
+@keyframes content {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tab-image {
+  position: absolute;
+  right: 1rem;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  transform: translateX(2rem);
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--overlay);
+    mix-blend-mode: multiply;
+  }
+
+  & img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    filter: grayscale(100%);
+  }
+}
+
+@keyframes image {
+  100% {
+    opacity: 1;
+    width: 300px;
+    transform: translateX(0);
+  }
+}
+
+.active .tab {
+  opacity: 1;
+  z-index: 5;
+}
+.active .tab-content {
+  animation: content 0.9s ease-out 0.4s forwards;
+}
+.active .tab-image {
+  animation: image 1s ease-out forwards;
+}
