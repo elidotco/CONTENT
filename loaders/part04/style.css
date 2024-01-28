@@ -9,20 +9,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes rotate2 {
-  0% {
-    transform: rotate(0deg);
-    border-top-color: rgba(0, 0, 0, 0.5);
-  }
-  50% {
-    transform: rotate(180deg);
-    border-top-color: rgba(0, 0, 255, 0.5);
-  }
-  100% {
-    transform: rotate(360deg);
-    border-top-color: rgba(0, 0, 0, 0.5);
-  }
-}
+
 * {
   box-sizing: border-box;
 }
@@ -30,7 +17,7 @@ body {
   background: #000;
   padding-bottom: 100px;
 }
-h1,
+/* h1,
 h3 {
   display: block;
   margin: 0px auto;
@@ -42,7 +29,7 @@ h3 {
 }
 h1 {
   margin: 50px auto;
-}
+} */
 .loader {
   position: relative;
   margin: 75px auto;
@@ -75,7 +62,7 @@ h1 {
   border-left-color: rgba(0, 0, 0, 0.5);
   border-right-color: rgba(0, 0, 0, 0.5);
 }
-/*loader 3  */
+
 .loader3,
 .loader3 div {
   border-radius: 50%;
@@ -104,4 +91,19 @@ div:hover {
 .loader,
 .loader * {
   will-change: transform;
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: rgba(0, 0, 255, 0.5);
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-color: rgba(0, 0, 0, 0.5);
+  }
 }

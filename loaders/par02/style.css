@@ -22,7 +22,7 @@ body {
 }
 
 .load :first-child {
-  background: #19a68c;
+  background: #faf342;
   animation-delay: -1.5s;
 }
 .load :nth-child(2) {
