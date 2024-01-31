@@ -1,0 +1,12 @@
+<div>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <span></span>
+</div>
+<span></span>
+
+span:nth-child(2) span:first-child()

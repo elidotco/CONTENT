@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.one,
+.two,
+.three,
+.four {
+  width: 25%;
+  height: 250px;
+}
+
+.container > div:first-child {
+  background-color: blue;
+}
+.container > div:nth-child(2) {
+  background-color: red;
+}
+.container > div:nth-child(3) {
+  background-color: yellow;
+}
+.container > div:last-child {
+  background-color: green;
+}
+
+@media (max-width: 450px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+  }
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 100%;
+  }
+}
