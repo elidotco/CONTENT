@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #151f28;
   padding: auto;
   display: flex;
   justify-content: center;
@@ -30,7 +30,6 @@ button {
   outline: none;
 }
 
-/* 3 */
 .btn-3 {
   background: rgb(0, 172, 238);
   background: linear-gradient(
