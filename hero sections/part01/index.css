@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(1, 1, 1);
+}
+/* https://shorturl.at/dDFR3 */
+
+.container {
+  width: 100vw;
+  height: fit-content;
+  overflow: hidden;
+}
+/* Header */
+header {
+  width: 100%;
+  padding: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+
+header > button {
+  border-radius: 50px;
+  border: none;
+  background: #fff;
+  padding: 10px 20px;
+}
+
+header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  list-style-type: none;
+}
+header > nav > ul > li > a {
+  color: rgba(255, 255, 255, 0.4);
+  transition: all 0.2s;
+}
+header > nav > ul > li > div {
+  width: 10px;
+  height: 2px;
+
+  align-self: center;
+  margin: 10px auto;
+  transition: all 0.2s;
+}
+header > nav > ul > li:hover > div {
+  width: 10px;
+  height: 2px;
+  background: white;
+  align-self: center;
+  margin: 10px auto;
+  transition: all 0.2s;
+}
+
+header > nav > ul > li > a:hover {
+  color: #fff;
+  transition: all 0.2s;
+}
+header > nav > ul > li:first-child > a {
+  color: #fff;
+}
+header > nav > ul > li:first-child > div {
+  background: #fff;
+}
+/* header ENd */
+
+section {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 70px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+section > h1 {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+}
+section > h1 > span {
+  font-size: 73px;
+  color: rgba(75, 136, 255, 1);
+}
+section > p {
+  padding: 20px 150px;
+  color: rgba(147, 147, 147, 1);
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+section > div > button {
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+section > div > button:first-child {
+  background-color: rgba(75, 136, 255, 1);
+}
+section > div > button:last-child {
+  background-color: rgba(35, 35, 35, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  align-items: center;
+  gap: 10px;
+}
+section > div > button:last-child > div {
+  background-color: white;
+  border-radius: 50px;
+  padding: 20px 30px;
+}
+section > div > button:last-child > div > img {
+  width: 15px;
+}
+
+main > img {
+  width: 100%;
+
+  position: relative;
+  top: -150px;
+  z-index: -1;
+}
