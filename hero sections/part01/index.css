@@ -144,3 +144,12 @@ main > img {
   top: -150px;
   z-index: -1;
 }
+
+@media screen and (max-width: 540px) {
+  nav {
+    display: none;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
