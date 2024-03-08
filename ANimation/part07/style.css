@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  flex-direction: column;
+  margin: 0;
+}
+* {
+  transition: background 0.5s ease !important;
+}
+.notification-bell {
+  position: relative;
+}
+.notification-bell svg {
+  fill: gold;
+  transform-origin: top center;
+}
+.notification-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #d80537;
+  color: #fff;
+  display: grid;
+  width: 1.5rem;
+  height: 1.5rem;
+  place-items: center;
+  border-radius: 50%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  transition: transform 0.5s ease !important;
+}
+button {
+  margin-top: 2rem;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #202020;
+  width: 15rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 9px;
+}
+button:hover {
+  background: #303030;
+}
+@keyframes ding {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
