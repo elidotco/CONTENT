@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(9, 14, 23);
+  color: #ffffff;
+}
+
+svg {
+  opacity: 0;
+  position: absolute;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: clamp(1rem, 2vw, 5rem);
+  display: flex;
+  align-items: center;
+}
+
+.hero--secondary {
+  --mask: radial-gradient(
+    circle at var(--x, 70%) var(--y, 50%),
+    black 25%,
+    transparent 0
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #482ef4, #5ff4c2, #ffffff);
+  color: rgb(9, 14, 23);
+  -webkit-mask-image: var(--mask);
+  mask-image: var(--mask);
+}
+
+.hero__heading {
+  font-size: clamp(2rem, 5vw, 8rem);
+  text-transform: uppercase;
+  margin: 0;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
