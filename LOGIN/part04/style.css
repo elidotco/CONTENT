@@ -6,44 +6,38 @@
   padding: 0;
   font-family: "Nanum Gothic", sans-serif;
 }
-
 body {
-  background: white;
+  background-color: white;
   min-height: 100vh;
 }
-
-/* Container */
 .container {
   width: 100vw;
   height: 100vh;
-
   display: flex;
   flex-direction: column-reverse;
   padding: 20px;
 }
-/* Container */
-
-/* Form container */
 .form-container {
   flex: 1;
 }
+
 .form-container,
 form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-/* Form container */
+
 .form-container > .heading > h1 {
   font-size: 24px;
   padding: 10px 0;
-  font: 900;
+  font-weight: 900;
 }
+
 .form-container > .heading > p {
   padding-bottom: 10px;
 }
 
-/* Forms */
 .form-item {
   display: flex;
   flex-direction: column;
@@ -52,12 +46,12 @@ form {
 
 input {
   height: 42px;
-  border-radius: 10px;
   outline: none;
-  border: 1px solid #d4d7e3;
-  background: #f3f7fb;
+  border-radius: 10px;
   padding: 10px;
   color: #8897ad;
+  background-color: #f3f7fb;
+  border: 1px solid #d4d7e3;
 }
 form > a {
   text-align: right;
@@ -69,27 +63,29 @@ form > button {
   height: 42px;
   border: none;
   border-radius: 12px;
-  background-color: #162d3a;
+  background: #162d3a;
   color: white;
   cursor: pointer;
 }
-
 .or {
   width: 100%;
   display: flex;
   align-items: center;
 }
+
 .or > div {
   flex: 1;
   height: 1px;
-  background: #cfdfe2;
+  background-color: #cfdfe2;
 }
-.social-singin {
+
+.social-signin {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.social-singin > button {
+
+.social-signin > button {
   width: 45%;
   cursor: pointer;
   display: flex;
@@ -98,54 +94,51 @@ form > button {
   justify-content: center;
   border: none;
   padding: 10px;
-  background: #f3f9fa;
   height: 42px;
   border-radius: 12px;
 }
-/* Forms */
 
-/* Image Container */
-.img-container {
+.image-container {
   width: 100%;
   height: 30%;
 }
-.img-container > img {
+
+.image-container > img {
   width: 100%;
   border-radius: 12px;
   height: 100%;
   object-fit: cover;
 }
-/* Image Container */
 
 button > p > span {
   display: none;
 }
 
-/* Desktop version */
 @media screen and (min-width: 780px) {
   .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-
-  .img-container {
+  .image-container {
     width: 40%;
     height: 100%;
   }
+
   .form-container {
     width: 60%;
     padding: 0 15vw;
-    height: 100%;
     flex: none;
     justify-content: center;
   }
-  .social-singin {
+
+  .social-signin {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .social-singin > button {
+
+  .social-signin > button {
     width: 100%;
   }
   button > p > span {
@@ -156,7 +149,6 @@ button > p > span {
     display: flex;
     gap: 5px;
   }
-
   .or {
     width: 100%;
     display: flex;
@@ -164,4 +156,3 @@ button > p > span {
     padding: 20px 0;
   }
 }
-/* Desktop version */
