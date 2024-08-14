@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    width: 100vw;
+     height: 100vh;
+     background: url("/background.png") no-repeat;
+     background-size: cover;
+     font-family: "Poppins", sans-serif;
+     color: white;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+
+
+}
+
+.desc>h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.desc>h1>span{
+    font-weight: 500;
+}
+
+
+.form-container{
+    width: 35vw;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, .1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-around;
+    padding: 20px 60px;
+
+    
+}
+
+form{
+    display: inherit;
+    flex-direction: inherit;
+    gap: 20px;
+}
+.input{
+    display: inherit;
+    flex-direction: inherit;
+    font-size: medium;
+}
+
+
+input{
+    outline: none;
+    border: none;
+    height: 44px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 2px 5px;
+}
+
+button{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background:#DC3845;
+    color: white;
+
+}
+
+button>span{
+    width: 20px;
+}
+
+p>span>a{
+    font-weight: 600;
+}
+
+
+
+
+@media only screen and (max-width:650px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        gap: 20px;
+
+    }
+    .desc>h1{
+        font-size: 6vw;
+    }
+    .form-container{
+        width: 100%;
+        padding: 20px 10px;
+        height: fit-content;
+    }
+   
+    body{
+        background: url("/background.png") no-repeat top left;
+    }
+
+    
+}
