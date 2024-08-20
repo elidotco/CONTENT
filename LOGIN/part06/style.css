@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f8f8f8;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15vw;
+}
+
+.img {
+  width: 50%;
+  height: 100%;
+}
+.img > img {
+  width: 100%;
+  height: 100%;
+}
