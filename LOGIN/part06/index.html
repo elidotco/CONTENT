@@ -9,32 +9,37 @@
   <body>
     <div class="container">
       <div class="form-container">
-        <h1>Welcome back</h1>
-        <p>Welcome back! Please enter your details</p>
+        <div class="header">
+          <h1>Welcome back</h1>
+          <p>Welcome back! Please enter your details</p>
+        </div>
 
         <form action="#">
           <div class="input">
             <label for="email">Email</label>
-            <input type="email" required />
+            <input type="email" required placeholder="Enter yor email " />
           </div>
           <div class="input">
             <label for="password">Password</label>
-            <input type="password" required />
+            <input type="password" required placeholder="*******" />
           </div>
 
           <div class="remfog">
             <div class=""><input type="checkbox" /> Remember me</div>
             <p><a href="#">Forgot Passsword</a></p>
           </div>
-
-          <button>Sign in</button>
-          <button>
-            <!-- Icon -->
-            <img src="/icon.png" alt="icon" />
-            <!-- Icon -->
-            Sign in with Google
-          </button>
-          <p>Don`t have an account ? <span>sign up for free!</span></p>
+          <div class="buttons">
+            <button class="log_button">Sign in</button>
+            <button class="google">
+              <!-- Icon -->
+              <img src="/icon.png" alt="icon" />
+              <!-- Icon -->
+              Sign in with Google
+            </button>
+          </div>
+          <p class="signup">
+            Don`t have an account ? <span>sign up for free!</span>
+          </p>
         </form>
       </div>
       <div class="img">

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +11,13 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #181818;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -18,13 +27,110 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-left: 15vw;
+  margin: 0;
 }
 
 .img {
+  position: relative;
+  top: 0;
+  right: 0;
   width: 50%;
   height: 100%;
 }
 .img > img {
   width: 100%;
   height: 100%;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 22vw;
+  margin-left: auto;
+  margin-right: 10vw;
+
+  height: 70vh;
+  & > .header {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    & > h1 {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+  }
+}
+
+form {
+  display: inherit;
+  flex-direction: inherit;
+  width: 100%;
+
+  & > .input {
+    display: inherit;
+    flex-direction: inherit;
+    gap: 1;
+    width: 100%;
+    padding: 10px 0;
+    & > label {
+      padding-left: 10px;
+    }
+    & > input {
+      height: 45px;
+      width: 100%;
+      outline: none;
+      background: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      padding: auto 8px;
+      font-size: medium;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.remfog {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+button {
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 12px;
+  width: 100%;
+  border: none;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+
+  font-weight: 500;
+}
+
+.log_button {
+  color: #f8f8f8;
+  background: #ea454c;
+}
+.signup {
+  margin-top: 30px;
+  text-align: center;
+  & > span {
+    color: #ea454c;
+  }
+}
+.google {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
 }
